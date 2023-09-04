@@ -1,0 +1,226 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../../img/logo.png">
+    <title>My Cigar Blog</title>
+</head>
+
+
+<script>
+function appendTotalPrice(totalIdName, priceClassName) { 
+    var total = 0;
+    var elements = document.getElementsByClassName(priceClassName);
+    for (var i=0; i<elements.length; i++) { 
+        var element = elements[i];
+
+        if (element) { 
+            var value = element.innerHTML;
+            var cost = parseInt(value.replace('$', ''));
+
+            total += cost; 
+        }
+    }
+    document.getElementById(totalIdName).innerHTML = '$'+total;
+}
+</script>
+
+<body>
+
+    <section id="heading">
+        <h1><a href="../home">My Cigar Blog</a></h1>
+        <h2>review, fun, life, cigar</h2>
+    </section>
+
+
+    <section id="pages" class="">
+        <a href="../home">Home</a>
+        <a href="../bookkeeping">Bookkeeping</a>
+        <a href="../home/records">Records</a>
+        <!-- <a href="../home/qa">Q&A</a>
+        <a href="../home/youtube">YouTube</a>
+        <a href="../home/opinion">Opinion</a> -->
+
+    </section>
+
+    <section id="mainContent">
+        <div>
+
+       <h3>Bookkeeping</h3>
+
+<p>
+    This is a record of all the cigars, books, accessories, or other
+    cigar related items that I have purchased in the past. The prices
+    shown in the table are my purchased price after tax. It is not
+    the exact amount. I either rounded it up, or removed the decimals
+    to keep the page clean.
+</p>
+
+<nav class="center">
+    <span>Cuban Cigars</span> |
+    <a href="2_new_world">New World Cigars</a> |
+    <a href="3_cigarillo">Cigarillos</a> |
+    <a href="4_books_accessories">Books & Accessories</a> 
+</nav>
+
+
+<table class="stripe">
+    <tr>
+        <th>Cuban Cigar</th>
+        <th class="price">CAD (<span class="green" id="cigarTotal"></span>)</th>
+    </tr>
+    <tr>
+        <td>Fonseca Delicias</td>
+        <td class="cigarPrice">$20</td>
+    </tr>
+    <tr>
+        <td>Trinidad Esmeralda</td>
+        <td class="cigarPrice">$70</td>
+    </tr>
+    <tr>
+        <td>Cohiba Robusto</td>
+        <td class="cigarPrice">$70</td>
+    </tr>
+    <tr>
+        <td>Romeo y Julieta - Coronitas en Cedro</td>
+        <td class="cigarPrice">$22</td>
+    </tr>
+    <tr>
+        <td>Montecristo - No. 5</td>
+        <td class="cigarPrice">$26</td>
+    </tr>
+    <tr>
+        <td>Cohiba Robusto</td>
+        <td class="cigarPrice">$70</td>
+    </tr>
+    <tr>
+        <td>Partagas Super Partagas</td>
+        <td class="cigarPrice">$26</td>
+    </tr>
+    <tr>
+        <td>Partagas Short</td>
+        <td class="cigarPrice">$30</td>
+    </tr>
+    <tr>
+        <td>H. Upmann Magnum 54</td>
+        <td class="cigarPrice">$47</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../-posts-cigar-by-records/00028">
+                Cohiba Siglo I
+            </a>
+        </td>
+        <td class="cigarPrice">$47</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../-posts-cigar-by-records/00027">
+                Hoyo de Monterrey - Epicure No. 2
+            </a>
+        </td>
+        <td class="cigarPrice">$45</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../-posts-cigar-by-records/00026">
+                Trinidad - Reyes
+            </a>
+        </td>
+        <td class="cigarPrice">$47</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../-posts-cigar-by-records/00025">
+                Ramon Allones - Specially Selected
+            </a>
+        </td>
+        <td class="cigarPrice">$38</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../-posts-cigar-by-records/00021">
+                Partagas Serie D - No. 5
+            </a>
+        </td>
+
+        <td class="cigarPrice">$40</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../-posts-cigar-by-records/00019">            
+                Hoyo de Monterrey - Le Hoyo de Rio Seco
+            </a>
+        </td>
+        <td class="cigarPrice">$52</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../-posts-cigar-by-records/00017">
+                H. Upmann - Majestic
+            </a>
+        </td>
+        <td class="cigarPrice">$28</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../-posts-cigar-by-records/00015">
+                Bolivar Royal Coronas
+            </a>
+        </td>
+        <td class="cigarPrice">$37</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../-posts-cigar-by-records/00009">
+                Montecristo - No. 5
+            </a>
+        </td>
+        <td class="cigarPrice">$40</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../-posts-cigar-by-records/00002">
+                Romeo y Julieta - Wide Churchill
+            </a>
+        </td>
+        <td class="cigarPrice">$53</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../-posts-cigar-by-records/00002">
+                Romeo y Julieta - No. 2 Tubo
+            </a>
+        </td>
+        <td class="cigarPrice">$32</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="../-posts-cigar-by-records/00002">
+                H. Upmann - Half Corona
+            </a>
+        </td>
+        <td class="cigarPrice">$32</td>
+    </tr>
+</table>
+
+
+<script>
+    appendTotalPrice('cigarTotal', 'cigarPrice');
+</script>
+
+    <p></p>
+
+        </div>
+    </section>
+
+
+
+    <p class="center" style="color: #ddd; font-size: smaller; margin: 1rem;">&copy; Copyrighted 2023</p>
+</body>
+
+
+
+
+</html>
