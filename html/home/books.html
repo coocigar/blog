@@ -17,7 +17,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
         if (element) { 
             var value = element.innerHTML;
-            var cost = parseInt(value.replace('$', ''));
+            var cost = parseInt(value.replace('$', '')) || 0;
 
             total += cost; 
         }
@@ -36,34 +36,27 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
     <section id="pages" class="">
         <a href="../home">Home</a>
+        <a href="../home/logs"> Cigar Logs</a> 
+        <span>|</span>
         <a href="../bookkeeping">Bookkeeping</a>
-        <a href="../home/records">Records</a>
-        <!-- <a href="../home/qa">Q&A</a>
-        <a href="../home/youtube">YouTube</a>
-        <a href="../home/opinion">Opinion</a> -->
-
+        <a href="../home/books">Books</a>
+        <a href="../home/accessories">Accessories</a>
+        <a href="../home/storage">Storage</a>
     </section>
 
     <section id="mainContent">
         <div>
 
-       <h3>Bookkeeping</h3>
+       
+
+<h3>Books</h3>
 
 <p>
-    This is a record of all the cigars, books, accessories, or other
-    cigar related items that I have purchased in the past. The prices
+    This is a record of all the cigar books that I have collected. The prices
     shown in the table are my purchased price after tax. It is not
     the exact amount. I either rounded it up, or removed the decimals
     to keep the page clean.
 </p>
-
-
-<nav class="center">
-    <a href="index">Cuban Cigars</a> |
-    <a href="2_new_world">New World Cigars</a> |
-    <a href="3_cigarillo">Cigarillos</a> |
-    <span>Books & Accessories</span>
-</nav>
 
 
 
@@ -72,6 +65,10 @@ function appendTotalPrice(totalIdName, priceClassName) {
     <tr>
         <th>Books</th>
         <th class="price">CAD (<span class="green" id="bookTotal"></span>)</th>
+    </tr>
+    <tr>
+        <td>Cigar Wealth: Unlock the Resources to Wealth in Business</td>
+        <td class="bookPrice">$30</td>
     </tr>
     <tr>
         <td>Playboy The Book of Cigars</td>
@@ -116,51 +113,6 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
 <table class="stripe">
     <tr>
-        <th>Accessories </th>
-        <th class="price">CAD (<span class="green" id="accessoriesTotal"></span>)</th>
-    </tr>
-    <tr>
-        <td>Plastic Container - Breath-taking Blue</td>
-        <td class="accessoriesPrice">$4</td>
-    </tr>
-    <tr>
-        <td>Plastic Container - Today's Menu! </td>
-        <td class="accessoriesPrice">$4</td>
-    </tr>
-    <tr>
-        <td>Plastic Container - Adventure Baby Blue Cigar</td>
-        <td class="accessoriesPrice">$4</td>
-    </tr>
-    <tr>
-        <td>Pipita Windproof Butane Torch Lighter 2pc</td>
-        <td class="accessoriesPrice">$33</td>
-    </tr>
-    <tr>
-        <td>Pipita Stainless Steel Cigar Cutter</td>
-        <td class="accessoriesPrice">$18</td>
-    </tr>
-    <tr>
-        <td>Boveda (10-pack, 69% RH, size 8)</td>
-        <td class="accessoriesPrice">$22</td>
-    </tr>
-    <tr>
-        <td>Plastic Container - Coffee Cigar </td>
-        <td class="accessoriesPrice">$3</td>
-    </tr>
-    <tr>
-        <td>Yellow Cigar Cutter Set (3pc)</td>
-        <td class="accessoriesPrice">$8</td>
-    </tr>
-    <tr>
-        <td>Cheap Plastic Guillotine Cigar Cutter</td>
-        <td class="accessoriesPrice">$3</td>
-    </tr>
-
-</table>
-
-
-<table class="stripe">
-    <tr>
         <th>Others</th>
         <th class="price">CAD</th>
     </tr>
@@ -175,7 +127,6 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
 <script>
     appendTotalPrice('bookTotal', 'bookPrice');
-    appendTotalPrice('accessoriesTotal', 'accessoriesPrice');
 </script>
 
     <p></p>
@@ -185,7 +136,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
 
 
-    <p class="center" style="color: #ddd; font-size: smaller; margin: 1rem;">&copy; Copyrighted 2023</p>
+    <p class="center" style="color: #ddd; font-size: smaller; margin: 1rem;">Copyrighted &copy; 2023-2024</p>
 </body>
 
 

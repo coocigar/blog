@@ -17,7 +17,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
         if (element) { 
             var value = element.innerHTML;
-            var cost = parseInt(value.replace('$', ''));
+            var cost = parseInt(value.replace('$', '')) || 0;
 
             total += cost; 
         }
@@ -36,22 +36,23 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
     <section id="pages" class="">
         <a href="../home">Home</a>
+        <a href="../home/logs"> Cigar Logs</a> 
+        <span>|</span>
         <a href="../bookkeeping">Bookkeeping</a>
-        <a href="../home/records">Records</a>
-        <!-- <a href="../home/qa">Q&A</a>
-        <a href="../home/youtube">YouTube</a>
-        <a href="../home/opinion">Opinion</a> -->
-
+        <a href="../home/books">Books</a>
+        <a href="../home/accessories">Accessories</a>
+        <a href="../home/storage">Storage</a>
     </section>
 
     <section id="mainContent">
         <div>
 
-       <h3>Bookkeeping</h3>
+       
+
+<h3>Bookkeeping</h3>
 
 <p>
-    This is a record of all the cigars, books, accessories, or other
-    cigar related items that I have purchased in the past. The prices
+    This is a record of all the cigars that I have purchased in the past. The prices
     shown in the table are my purchased price after tax. It is not
     the exact amount. I either rounded it up, or removed the decimals
     to keep the page clean.
@@ -60,8 +61,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
 <nav class="center">
     <span>Cuban Cigars</span> |
     <a href="2_new_world">New World Cigars</a> |
-    <a href="3_cigarillo">Cigarillos</a> |
-    <a href="4_books_accessories">Books & Accessories</a> 
+    <a href="3_cigarillo">Cigarillos</a> <br>
 </nav>
 
 
@@ -69,6 +69,14 @@ function appendTotalPrice(totalIdName, priceClassName) {
     <tr>
         <th>Cuban Cigar</th>
         <th class="price">CAD (<span class="green" id="cigarTotal"></span>)</th>
+    </tr>
+    <tr>
+        <td>Romeo y Julieta - Short Churchill</td>
+        <td class="cigarPrice">$55</td>
+    </tr>
+    <tr>
+        <td>H. Upmann Half Corona</td>
+        <td class="cigarPrice">$30</td>
     </tr>
     <tr>
         <td>Fonseca Delicias</td>
@@ -217,7 +225,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
 
 
-    <p class="center" style="color: #ddd; font-size: smaller; margin: 1rem;">&copy; Copyrighted 2023</p>
+    <p class="center" style="color: #ddd; font-size: smaller; margin: 1rem;">Copyrighted &copy; 2023-2024</p>
 </body>
 
 

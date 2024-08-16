@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../../img/logo.png">
+    <title>My Cigar Blog</title>
+</head>
+
+
+<script>
+function appendTotalPrice(totalIdName, priceClassName) { 
+    var total = 0;
+    var elements = document.getElementsByClassName(priceClassName);
+    for (var i=0; i<elements.length; i++) { 
+        var element = elements[i];
+
+        if (element) { 
+            var value = element.innerHTML;
+            var cost = parseInt(value.replace('$', '')) || 0;
+
+            total += cost; 
+        }
+    }
+    document.getElementById(totalIdName).innerHTML = '$'+total;
+}
+</script>
+
+<body>
+
+    <section id="heading">
+        <h1><a href="../home">My Cigar Blog</a></h1>
+        <h2>review, fun, life, cigar</h2>
+    </section>
+
+
+    <section id="pages" class="">
+        <a href="../home">Home</a>
+        <a href="../home/logs"> Cigar Logs</a> 
+        <span>|</span>
+        <a href="../bookkeeping">Bookkeeping</a>
+        <a href="../home/books">Books</a>
+        <a href="../home/accessories">Accessories</a>
+        <a href="../home/storage">Storage</a>
+    </section>
+
+    <section id="mainContent">
+        <div>
+
+       
+
+<h3>Storage</h3>
+
+<p>
+    This is a record of all the cigar stroing related items that I have purchased. 
+    The prices shown in the table are my purchased price after tax. It is not
+    the exact amount. I either rounded it up, or removed the decimals
+    to keep the page clean.
+</p>
+
+
+
+<table class="stripe">
+    <tr>
+        <th>Tupperdors</th>
+        <th class="price">CAD (<span class="green" id="storageTotal"></span>)</th>
+    </tr>
+    <tr>
+        <td>Daiso Sealed Container with Sieve</td>
+        <td class="storagePrice">$5</td>
+    </tr>
+    <tr>
+        <td>Always Good with Air Slider</td>
+        <td class="storagePrice">$4</td>
+    </tr>
+    <tr>
+        <td>Double layer long (Blue)</td>
+        <td class="storagePrice">$8</td>
+    </tr>
+    <tr>
+        <td>Double layer long (Pink)</td>
+        <td class="storagePrice">$8</td>
+    </tr>
+    <tr>
+        <td>Le petit Cadeau</td>
+        <td class="storagePrice">$4</td>
+    </tr>
+    <tr>
+        <td>Le petit Cadeau</td>
+        <td class="storagePrice">$4</td>
+    </tr>
+    <tr>
+        <td>Blue L + N</td>
+        <td class="storagePrice">$4</td>
+    </tr>
+    <tr>
+        <td>Le petit Cadeau</td>
+        <td class="storagePrice">$4</td>
+    </tr>
+    <tr>
+        <td>Breath-taking Denim Blue</td>
+        <td class="storagePrice">$4</td>
+    </tr>
+    <tr>
+        <td>Today's Menu! </td>
+        <td class="storagePrice">$4</td>
+    </tr>
+    <tr>
+        <td>Adventure Baby Blue</td>
+        <td class="storagePrice">$4</td>
+    </tr>
+    <tr>
+        <td>Coffee Shop </td>
+        <td class="storagePrice">$3</td>
+    </tr>
+</table>
+
+<table class="stripe">
+    <tr>
+        <th>Humidity Control</th>
+        <th class="price">CAD (<span class="green" id="humidityTotal"></span>)</th>
+    </tr>
+    <tr>
+        <td>Boveda Pack Holder</td>
+        <td class="humidityPrice">$11</td>
+    </tr>
+    <tr>
+        <td>Boveda (10-pack, 62% RH, size 4)</td>
+        <td class="humidityPrice">$8</td>
+    </tr>
+    <tr>
+        <td>Boveda (10-pack, 62% RH, size 4)</td>
+        <td class="humidityPrice">$8</td>
+    </tr>
+    <tr>
+        <td>Boveda (10-pack, 62% RH, size 4)</td>
+        <td class="humidityPrice">$8</td>
+    </tr>
+    <tr>
+        <td>Boveda (10-pack, 65% RH, size 8)</td>
+        <td class="humidityPrice">$15</td>
+    </tr>
+    <tr>
+        <td>Boveda (10-pack, 69% RH, size 8)</td>
+        <td class="humidityPrice">$17</td>
+    </tr>
+    <tr>
+        <td>Boveda (10-pack, 65% RH, size 8)</td>
+        <td class="humidityPrice">$25</td>
+    </tr>
+    <tr>
+        <td>Boveda (10-pack, 69% RH, size 8)</td>
+        <td class="humidityPrice">$22</td>
+    </tr>
+
+</table>
+
+
+<script>
+    appendTotalPrice('storageTotal', 'storagePrice');
+    appendTotalPrice('humidityTotal', 'humidityPrice');
+</script>
+
+    <p></p>
+
+        </div>
+    </section>
+
+
+
+    <p class="center" style="color: #ddd; font-size: smaller; margin: 1rem;">Copyrighted &copy; 2023-2024</p>
+</body>
+
+
+
+
+</html>

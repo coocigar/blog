@@ -17,7 +17,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
         if (element) { 
             var value = element.innerHTML;
-            var cost = parseInt(value.replace('$', ''));
+            var cost = parseInt(value.replace('$', '')) || 0;
 
             total += cost; 
         }
@@ -36,21 +36,23 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
     <section id="pages" class="">
         <a href="../home">Home</a>
+        <a href="../home/logs"> Cigar Logs</a> 
+        <span>|</span>
         <a href="../bookkeeping">Bookkeeping</a>
-        <a href="../home/records">Records</a>
-        <!-- <a href="../home/qa">Q&A</a>
-        <a href="../home/youtube">YouTube</a>
-        <a href="../home/opinion">Opinion</a> -->
-
+        <a href="../home/books">Books</a>
+        <a href="../home/accessories">Accessories</a>
+        <a href="../home/storage">Storage</a>
     </section>
 
     <section id="mainContent">
         <div>
 
-       <h3>Records</h3>
+       
+
+<h3>Cigar Logs</h3>
 
 <p>
-    This is the list of cigars that I have enjoyed. These are sort by dates from newest to oldest cigar
+    This is my cigar log! This is the list of cigars that I have enjoyed. These are sort by dates from newest to oldest cigar
     that I have tried. This is a page for me to look up and reference how my taste might change over time.
     Also for me to ensure that I do not over-smoke. 
 </p>
@@ -61,9 +63,97 @@ function appendTotalPrice(totalIdName, priceClassName) {
         <th>Cigar</th>
     </tr>
     <tr>
+        <td>2024-08-14</td>
+        <td>
+            <!-- <a href="../-posts-cigar-by-records/00044"> -->
+                Oliva Serie G - Robusto (5)
+            <!-- </a> -->
+        </td>
+    </tr>
+    <tr>
+        <td>2024-08-06</td>
+        <td>
+            <!-- <a href="../-posts-cigar-by-records/00044"> -->
+                Rocky Patel - Vintage 1992 (Robusto)
+            <!-- </a> -->
+        </td>
+    </tr>
+    <tr>
+        <td>2024-07-30</td>
+        <td>
+            <!-- <a href="../-posts-cigar-by-records/00043"> -->
+                Oliva Serie G - Robusto (4)
+            <!-- </a> -->
+        </td>
+    </tr>
+    <tr>
+        <td>2024-03-28</td>
+        <td>
+            <!-- <a href="../-posts-cigar-by-records/00042"> -->
+                Perdomo 10th Year Anniversary Champgne (2/2)
+            <!-- </a> -->
+        </td>
+    </tr>
+    <tr>
+        <td>2024-02-05</td>
+        <td>
+            <!-- <a href="../-posts-cigar-by-records/00041"> -->
+                Perdomo 10th Year Anniversary Champgne (1/2)
+            <!-- </a> -->
+        </td>
+    </tr>
+    <tr>
+        <td>2023-12-29</td>
+        <td>
+            <a href="../-posts-cigar-by-records/00040">
+                Davidoff - Winston Churchill Belicoso (4)
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>2023-10-11</td>
+        <td>
+            <!-- <a href="../-posts-cigar-by-records/00039"> -->
+                Davidoff - Winston Churchill Belicoso (3)
+                <!-- </a> -->
+        </td>
+    </tr>
+    <tr>
+        <td>2023-10-08</td>
+        <td>
+            <!-- <a href="../-posts-cigar-by-records/00038"> -->
+                Davidoff - Winston Churchill Belicoso (2)
+                <!-- </a> -->
+        </td>
+    </tr>
+    <tr>
+        <td>2023-10-05</td>
+        <td>
+            <!-- <a href="../-posts-cigar-by-records/00037"> -->
+                Davidoff - Winston Churchill Belicoso (1)
+                <!-- </a> -->
+        </td>
+    </tr>
+    <tr>
+        <td>2023-09-16</td>
+        <td>
+            <!-- <a href="../-posts-cigar-by-records/00036"> -->
+                Fonseca Delicias
+                <!-- </a> -->
+        </td>
+    </tr>
+    <tr>
+        <td>2023-09-09</td>
+        <td>
+            <!-- <a href="../-posts-cigar-by-records/00035"> -->
+                Romeo y Julieta - Coronitas en Cedro
+                <!-- </a> -->
+        </td>
+    </tr>
+    <tr>
         <td>2023-09-02</td>
         <td>
-            <!-- <a href="../-posts-cigar-by-records/00029"> -->
+            <!-- <a href="../-posts-cigar-by-records/00034"> -->
                 Cohiba Robusto
                 <!-- </a> -->
         </td>
@@ -71,7 +161,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
     <tr>
         <td>2023-08-29</td>
         <td>
-            <!-- <a href="../-posts-cigar-by-records/00029"> -->
+            <!-- <a href="../-posts-cigar-by-records/00033"> -->
                 Bravo Maduro Robusto (Orange)
                 <!-- </a> -->
         </td>
@@ -79,7 +169,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
     <tr>
         <td>2023-08-25</td>
         <td>
-            <!-- <a href="../-posts-cigar-by-records/00029"> -->
+            <!-- <a href="../-posts-cigar-by-records/00032"> -->
                 Davidoff - Grand Cru No. 2
                 <!-- </a> -->
         </td>
@@ -87,7 +177,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
     <tr>
         <td>2023-08-21</td>
         <td>
-            <!-- <a href="../-posts-cigar-by-records/00029"> -->
+            <!-- <a href="../-posts-cigar-by-records/00031"> -->
                 Montecristo - No. 5
                 <!-- </a> -->
         </td>
@@ -95,7 +185,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
     <tr>
         <td>2023-08-18</td>
         <td>
-            <!-- <a href="../-posts-cigar-by-records/00029"> -->
+            <!-- <a href="../-posts-cigar-by-records/00030"> -->
                 Oliva Serie G - Robusto (3)
                 <!-- </a> -->
         </td>
@@ -103,9 +193,9 @@ function appendTotalPrice(totalIdName, priceClassName) {
     <tr>
         <td>2023-08-17</td>
         <td>
-            <!-- <a href="../-posts-cigar-by-records/00029"> -->
+            <a href="../-posts-cigar-by-records/00029">
                 Punch - London Club
-            <!-- </a> -->
+            </a>
         </td>
     </tr>
     <tr>
@@ -342,7 +432,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
 
 
-    <p class="center" style="color: #ddd; font-size: smaller; margin: 1rem;">&copy; Copyrighted 2023</p>
+    <p class="center" style="color: #ddd; font-size: smaller; margin: 1rem;">Copyrighted &copy; 2023-2024</p>
 </body>
 
 

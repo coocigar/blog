@@ -17,7 +17,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
         if (element) { 
             var value = element.innerHTML;
-            var cost = parseInt(value.replace('$', ''));
+            var cost = parseInt(value.replace('$', '')) || 0;
 
             total += cost; 
         }
@@ -36,18 +36,20 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
     <section id="pages" class="">
         <a href="../home">Home</a>
+        <a href="../home/logs"> Cigar Logs</a> 
+        <span>|</span>
         <a href="../bookkeeping">Bookkeeping</a>
-        <a href="../home/records">Records</a>
-        <!-- <a href="../home/qa">Q&A</a>
-        <a href="../home/youtube">YouTube</a>
-        <a href="../home/opinion">Opinion</a> -->
-
+        <a href="../home/books">Books</a>
+        <a href="../home/accessories">Accessories</a>
+        <a href="../home/storage">Storage</a>
     </section>
 
     <section id="mainContent">
         <div>
 
-       <div class="article-nav"><a tabindex="0" href="00027.html">&lt; Previous</a></div>
+       
+
+<div class="article-nav"><a tabindex="0" href="00027.html">&lt; Previous</a><a tabindex="1" href="00029.html" style="float: right">Next Cigar &gt;</a></div>
 <h3>Cigar Review: Cohiba Siglo I</h3>
 
 <p>
@@ -161,7 +163,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
 <p class="center">
     <img style="width: 35%" src="../../img/-posts-cigar-by-records/00028/18.jpeg" alt="18">
     <img style="width: 63%" src="../../img/-posts-cigar-by-records/00028/19.jpeg" alt="19">
-</p><div class="article-nav"><a tabindex="0" href="00027.html">&lt; Previous</a></div>
+</p><div class="article-nav"><a tabindex="0" href="00027.html">&lt; Previous</a><a tabindex="1" href="00029.html" style="float: right">Next Cigar &gt;</a></div>
 
 
     <p></p>
@@ -171,7 +173,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
 
 
-    <p class="center" style="color: #ddd; font-size: smaller; margin: 1rem;">&copy; Copyrighted 2023</p>
+    <p class="center" style="color: #ddd; font-size: smaller; margin: 1rem;">Copyrighted &copy; 2023-2024</p>
 </body>
 
 

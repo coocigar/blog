@@ -17,7 +17,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
         if (element) { 
             var value = element.innerHTML;
-            var cost = parseInt(value.replace('$', ''));
+            var cost = parseInt(value.replace('$', '')) || 0;
 
             total += cost; 
         }
@@ -36,18 +36,20 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
     <section id="pages" class="">
         <a href="../home">Home</a>
+        <a href="../home/logs"> Cigar Logs</a> 
+        <span>|</span>
         <a href="../bookkeeping">Bookkeeping</a>
-        <a href="../home/records">Records</a>
-        <!-- <a href="../home/qa">Q&A</a>
-        <a href="../home/youtube">YouTube</a>
-        <a href="../home/opinion">Opinion</a> -->
-
+        <a href="../home/books">Books</a>
+        <a href="../home/accessories">Accessories</a>
+        <a href="../home/storage">Storage</a>
     </section>
 
     <section id="mainContent">
         <div>
 
-       <div class="article-nav"><a tabindex="0" href="00006.html">&lt; Previous</a><a tabindex="1" href="00008.html" style="float: right">Next Cigar &gt;</a></div>
+       
+
+<div class="article-nav"><a tabindex="0" href="00006.html">&lt; Previous</a><a tabindex="1" href="00008.html" style="float: right">Next Cigar &gt;</a></div>
 <h3>Cigar Log: Phillies - Blunt Strawberry 1 (Top Half, with Wrapper)</h3>
 
 <p style="font-size: smaller">
@@ -113,7 +115,7 @@ function appendTotalPrice(totalIdName, priceClassName) {
 
 
 
-    <p class="center" style="color: #ddd; font-size: smaller; margin: 1rem;">&copy; Copyrighted 2023</p>
+    <p class="center" style="color: #ddd; font-size: smaller; margin: 1rem;">Copyrighted &copy; 2023-2024</p>
 </body>
 
 
