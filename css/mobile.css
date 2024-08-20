@@ -8,6 +8,10 @@
         padding: 1rem;
     }
 
+    section h2 { 
+        margin-bottom: 1rem;
+    }
+
     section#pages { 
         padding: 1rem;
     }
