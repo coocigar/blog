@@ -1,0 +1,25 @@
+
+
+@media (max-width: 600px) {
+    /* section, */
+    section { 
+        width: calc(100% - 2rem); 
+        margin: 0;
+        padding: 1rem;
+    }
+
+    section#pages { 
+        padding: 1rem;
+    }
+
+    
+    #mainContent>div { 
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
+    table { 
+        font-size: .9rem;
+
+    }
+}
+
