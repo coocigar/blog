@@ -1,12 +1,8 @@
 
 body {
-    font-family: arial, sans-serif;
     /* margin: auto; */
     background: #5f3a25;
     /* background-image: linear-gradient(to right, #847a74, #5f3a25, #3c2215); */
-    line-height: 1.8rem;
-    color: #777;
-    /* font-size: 1.1rem; */
 }
 
 section { 
@@ -20,9 +16,7 @@ section {
 
 section#pages { 
     background: #fff4c9; 
-    color: #5f3a25;
     padding: 1rem 3rem;
-
     overflow: auto;
     white-space: nowrap;
 }
@@ -32,11 +26,6 @@ section#pages::-webkit-scrollbar {
 
 section#pages a,
 section#pages span { 
-    color: #5f3a25;
-    /* font-size: smaller; */
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
     display: inline-block;
     margin: 0;
     padding: 0; 
@@ -62,22 +51,13 @@ section#heading {
 }
 
 section h1 { 
-    color: white;
-
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 1.1;
     margin: 0 0 10px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.2);
-
-    font-family: "Verdana", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
-section h1 a { 
-    color: white;
-}
-section h1 a:hover { 
-    text-decoration: none;
+
+
+section h2 { 
+    margin-bottom: 1.5rem;
 }
 
 .green { 
@@ -89,7 +69,6 @@ section h1 a:hover {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    font-size: 1.1em;
 }
 
 @keyframes fadeInAnimation {
@@ -102,24 +81,11 @@ section h1 a:hover {
 }
 
 
-div.article-nav a { 
-    /* text-decoration: none; */
-    /* font-size: smaller; */
-}
-
-
-
 p { 
     margin-bottom: 2rem;
 }
 
-section h2 { 
-    color: #D8B39B;
-    font-family: "Kalam","Chalkboard","Comic Sans",script;
-    font-size: 24px;
-    /* font-size: 1.5rem; */
-    line-height: 1.3;
-}
+
 
 table {
     font-family: arial, sans-serif;
@@ -163,7 +129,6 @@ a:hover {
 
 
 nav { 
-    font-family: "Kalam","Chalkboard","Comic Sans",script;
     margin: 1rem;
 }
 
@@ -177,13 +142,10 @@ img {
 }
 
 span.caption { 
-    font-size: smaller;
     text-align: left;
     display: block;
     margin: 1rem;
     margin-top: 0;
-    line-height: 1.2rem;
-    font-style: italic;
 }
 
 
