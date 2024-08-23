@@ -1,7 +1,7 @@
 
 body {
     /* font-family: arial, sans-serif; */
-    font-family: "Lato","Helvetica Neue",helvetica,arial,sans-serif;
+    font-family: "Garamond","Helvetica Neue",helvetica,arial,sans-serif;
     line-height: 1.5rem;
     color: #777;
     font-size: 13px;
@@ -24,7 +24,7 @@ section h1 {
     line-height: 1.1;
     text-shadow: 3px 3px 2px  rgba(0, 0, 0, 0.235);
 
-    font-family: "Verdana", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-family: "Tahoma", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 section h1 a { 
