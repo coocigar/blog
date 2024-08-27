@@ -115,6 +115,11 @@ table.stripe td {
 }
 
 
+.nowrap{ 
+    white-space: nowrap;
+}
+
+
 
 
 a { 

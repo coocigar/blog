@@ -3,8 +3,8 @@
 @media (max-width: 600px) {
     /* section, */
     section { 
-        width: calc(100% - 2rem); 
-        margin: 0;
+        width: calc(100% - 3rem); 
+        margin: 0 auto;
         padding: 1rem;
     }
 
@@ -18,16 +18,23 @@
 
     
     #mainContent>div { 
-        font-size: .9rem;
+        /* font-size: .9rem; */
+        font-size: 14px;
         line-height: 1.5rem;
     }
     table { 
-        font-size: .9rem;
+        /* font-size: .9rem; */
+        font-size: 14px;
 
     }
 
     div.article-nav a { 
         font-size: .9rem;
     }
+
+    td, th {
+        padding: .6rem;
+    }
+
 }
 
