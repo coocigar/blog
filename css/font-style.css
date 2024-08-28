@@ -35,8 +35,12 @@ section h1 a:hover {
 }
 
 section h2, nav { 
-    font-family: "Kalam","Chalkboard","Comic Sans",script;
+    font-family: "Kalam","Chalkboard","Comic Sans","Trebuchet MS",script;
 }
+
+
+
+
 
 section h2 { 
     color: #D8B39B;
