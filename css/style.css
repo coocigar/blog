@@ -5,6 +5,10 @@ body {
     /* background-image: linear-gradient(to right, #847a74, #5f3a25, #3c2215); */
 }
 
+.hamburger { 
+    display: none;
+}
+
 section { 
     width: calc(95% - 6rem); 
     max-width: 800px;
@@ -30,6 +34,7 @@ section#pages span {
     margin: 0;
     padding: 0; 
     padding-right: .8rem;
+    vertical-align: middle;
 }
 
 

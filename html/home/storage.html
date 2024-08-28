@@ -2,6 +2,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/hamburger.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/font-style.css">
     <link rel="stylesheet" href="../../css/mobile.css">
@@ -26,6 +27,10 @@ function appendTotalPrice(totalIdName, priceClassName) {
     }
     document.getElementById(totalIdName).innerHTML = '$'+total;
 }
+function toggleMenuHamburger(x) {
+  x.classList.toggle("change");
+  document.getElementById('pagesSubmenu').classList.toggle('menu');
+}
 </script>
 
 <body>
@@ -36,25 +41,28 @@ function appendTotalPrice(totalIdName, priceClassName) {
     </section>
 
 
-    <section id="pages" class="">
+    <section id="pages">
         <a href="../home">Home</a>
         <a href="../home/logs"> Cigar Logs</a> 
-        <span>
-            <span>|</span>
+
+        <span class="separator">|</span>
+
+        <div class="hamburger mobile" onclick="toggleMenuHamburger(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <span id="pagesSubmenu" class="menu">
             <a href="../bookkeeping">Bookkeeping</a>
             <a href="../home/books">Books</a>
             <a href="../home/accessories">Accessories</a>
             <a href="../home/storage">Storage</a>
         </span>
-        
     </section>
 
     <section id="mainContent">
-        <div>
-
-       
-
-<h3>Storage</h3>
+        <div><h3>Storage</h3>
 
 <p>
     This is a record of all the cigar stroing related items that I have purchased. 
